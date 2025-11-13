@@ -1,0 +1,85 @@
+
+.typed-text {
+  border-right: 2px solid #007bff;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 3s steps(50, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.lgo{
+  cursor: default;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Frosted Glass Navbar */
+.glass-nav {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #333 !important;
+  margin-left: 10px;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-outline-primary {
+  border-radius: 8px;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+#scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background-color: #007bff;
+  z-index: 9999;
+  transition: width 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
